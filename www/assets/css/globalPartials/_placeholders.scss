@@ -1,0 +1,64 @@
+/* depends on mixins and variables. */
+%flex{
+	@include flex;
+}
+
+%flexVertical{
+	@include flexVertical;
+}
+
+%flexHorizontal{
+	@include flexHorizontal;
+}
+
+%flexWrap{
+	@include flexWrap;
+}
+%flexNoWrap{
+	@include flexNoWrap;
+}
+
+%flexBetween{
+	@include flexBetween;
+}
+%transitionTransform{
+	-webkit-transition: 0.6s ease-in-out;
+	-moz-transition: 0.6s ease-in-out;
+	-o-transition: 0.6s ease-in-out;
+	transition: 0.6s ease-in-out;
+}
+
+%fontSmooth{
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-stroke: 1px rgba(0,0,0,0.1);
+	-moz-osx-text-stroke: 1px rgba(0,0,0,0.1);
+}
+%fontSmoothDbl{
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-stroke: 1px rgba(0,0,0,0.2);
+	-moz-osx-text-stroke: 1px rgba(0,0,0,0.2);
+}
+
+%boxShadow{
+	box-shadow:$boxShadow;
+	-moz-box-shadow: $boxShadow;
+	-webkit-box-shadow: $boxShadow;
+}
+
+%boxShadowInsetTop{
+	box-shadow:$boxShadowInsetTop;
+	-moz-box-shadow: $boxShadowInsetTop;
+	-webkit-box-shadow: $boxShadowInsetTop;
+}
+%boxShadowInsetBottom{
+	box-shadow:$boxShadowInsetBottom;
+	-moz-box-shadow: $boxShadowInsetBottom;
+	-webkit-box-shadow: $boxShadowInsetBottom;
+}
+
+%typeSmall{
+	font-size:8px;
+	font-size:0.8rem;
+}

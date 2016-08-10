@@ -1,0 +1,31 @@
+body,
+div, 
+table, 
+th,
+td,
+span,
+fieldset,
+legend,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+section,
+article{
+	margin:0;
+	padding:0;
+}
+
+img{
+	border:none;
+}
+
+* {
+    box-sizing:border-box;
+}
+
+table{
+	border-spacing:0;
+}

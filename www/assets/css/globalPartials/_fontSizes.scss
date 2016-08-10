@@ -1,0 +1,31 @@
+/* default font sizes */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+legend,
+input, 
+label,
+td,
+th,
+li,
+a,
+caption{
+	font-size:9.5px;
+	font-size:0.95rem;
+}
+
+/* override material-ui styles */
+input,
+button span,
+label div,
+button div{
+	font-size:0.95rem !important;
+}
+
+
+

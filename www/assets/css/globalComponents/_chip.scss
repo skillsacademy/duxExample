@@ -1,0 +1,22 @@
+.chipWrapper{
+	margin:$m10 0 0 0 !important;
+	width:100%;
+	white-space:normal !important;
+	
+	.chipEach{
+		margin:0 $m10 $m10 0 !important;
+		display:inline-block  !important;
+		vertical-align:middle !important;
+		padding:0 !important;
+
+		span, 
+		svg{
+			vertical-align:middle !important;
+			line-height:32px !important;				
+		}
+		svg{
+			margin:0 $m4 0 -#{$m8} !important;
+		}
+	}
+
+}

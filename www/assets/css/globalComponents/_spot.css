@@ -1,0 +1,8 @@
+.spot{
+	border-radius: 50%;
+    display: inline-block;
+    width:8px;
+    height:8px;
+    background:$greyC;
+    margin-right:$m10;
+}

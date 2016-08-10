@@ -1,0 +1,51 @@
+@import "../../globalPartials/vars";
+
+.calendarTableWeekView{
+	table{
+		border-collapse:collapse;
+		width:100%;
+		position:relative;
+		overflow:hidden;
+
+		&:after{ /* top relative to th height - gradient */
+			content: " ";
+			position:absolute;
+			bottom:0;
+			left:-10px;
+			width:120%;
+			height:110%;
+			box-shadow:$boxShadowBottomInset;
+			cursor-pointer:none;
+		}
+
+	}
+	th,
+	td{
+		padding:$m4 $m10;
+		width:14.28571428571429%;
+	}
+	th,
+	tfoot td{
+		text-align:left;
+		color:$greyC;
+		padding-bottom:$m20;
+	}
+
+	thead th{
+		height:50px;
+	}
+	th:first-child,
+	td:first-child{
+		padding-left:$m20;
+	}
+	th:last-child,
+	td:last-child{
+		padding-right:$m35;
+	}	
+	
+	tbody .topicUnits td{
+		height:100px;
+	}
+
+
+}

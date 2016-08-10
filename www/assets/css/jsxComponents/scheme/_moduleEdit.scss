@@ -1,0 +1,69 @@
+@import "../../globalPartials/_vars";
+
+.moduleWrapper{
+	background:$greyF;
+	overflow:hidden;
+}
+.moduleEdit{
+
+	position:relative;
+
+	.topicUnitEdit{
+		position:absolute; /* too tall to be fixed */
+		white-space:nowrap;
+		width:25%;
+		@extend %boxShadow;
+		background:#fff;
+		transform:translate(-150%,0);
+		overflow:hidden;
+		@extend %transitionTransform;	
+
+		&[data-state='on']{
+			z-index:20; /* above .moduleBlock*/
+			transform:translate(0,0);
+		
+			& + .moduleBlock{
+
+				width:70%;
+				transform:translate(45%,0);
+
+				/* or
+
+				width:50%;
+				transform:translate(60%,0);
+
+				width:70%;
+				transform:translate(45%,0);
+				 */
+			}
+		}
+	
+	}
+	.moduleBlock{
+		position:relative;
+		@extend %transitionTransform;
+		z-index:20; /* above .topicUnitEdit*/
+		width:100%;
+	}
+
+	
+
+}
+.moduleBlock{
+	background:$greyF;
+
+	
+
+	.moduleEach{
+		@extend %boxShadow;
+
+	}
+	.moduleAssign,
+	.moduleDelete{
+		display:inline-block;
+		> button span{
+			text-transform:capitalize !important;
+			text-decoration:underline !important;
+		}
+	}
+}

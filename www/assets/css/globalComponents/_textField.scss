@@ -1,0 +1,39 @@
+.textField{
+	margin:20px 0 0 0 !important;
+	height: auto !important;
+	line-height: auto !important;
+	label{
+		top:0 !important;
+	}
+	input{
+		height: auto !important;
+		margin:0 0 5px 0 !important;
+	}
+	hr{
+		position:static !important;
+	}
+}
+
+/*
+.textFieldMulti{
+	margin:20px 0 0 0 !important;
+	height: auto !important;
+	line-height: auto !important;
+	label{
+		top:0 !important;
+	}
+	input{
+		height: auto !important;
+		margin:0 0 5px 0 !important;
+	}
+	> div,
+	textarea{
+		height: 80px !important;
+	}
+	textarea{
+		margin:0 0 5px 0 !important;
+	}
+	hr{
+		position:static !important;
+	}
+}*/

@@ -1,0 +1,32 @@
+@import "../../globalPartials/_vars";
+
+.classGroupCreate{	
+	.heading{
+		margin:0;
+		padding:30px 0 0 0 !important;
+	}
+	.rowAddStudents{
+		margin-top:$m20;
+		width:100%;
+
+		.title,
+		.invitationCode{
+			padding:10px 0;
+		}
+	}
+
+	table.daysOfWeek{
+		margin:30px 0 20px 0;
+		width:100%;
+
+		caption{
+			text-align:left;
+			margin:0 0 $m20 0;
+		}
+
+		th{
+			font-weight:normal;
+			color:$greyC;
+		}
+	}
+}

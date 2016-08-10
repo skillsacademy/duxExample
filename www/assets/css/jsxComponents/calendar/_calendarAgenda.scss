@@ -1,0 +1,63 @@
+@import "../../globalPartials/vars";
+
+.calendarAgenda{
+
+	margin-top:$m35;
+	padding: $m20;
+
+
+	.rowBlock{
+		margin:$m20 0 0 0;
+	}
+	.colInline{
+		margin-right:80px;
+	}
+	.title{
+		font-weight:bold;
+		margin:0 0 $m35 0;
+	}
+
+	.timeStart,
+	.timeEnd{
+		font-size:7.5px;
+		font-size:0.75rem;
+	}
+	.quizBlock{
+		border-radius:4px;
+
+	}
+
+	.subject,
+	.btnWrap{
+		padding:$m20 $m20 $m20 $m10;
+	}
+	.subject{
+		min-height:120px;
+	}
+	.subjectLabel,
+	.quizTitle{
+		/*color:$greyF;*/
+	}
+	.subjectLabel{
+		font-weight:normal;
+		font-size:8.5px;
+		font-size:0.85rem;
+	}
+	.quizTitle{
+		margin:$m10 0 0 0;	
+	}
+
+	.btnWrap{
+		height:100%;
+	}
+	.btnArrow{
+		background:transparent;
+		border:none;
+		border-left:1px solid $greyF;
+		height:100%;
+		width:80px;
+		i.iArrowLeft{
+			margin-top:-10px;
+		}		
+	}
+}

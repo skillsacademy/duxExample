@@ -1,0 +1,11 @@
+.iArrowLeft{
+	display:inline-block;
+	/* right arrow */
+	&:before{
+		border: solid transparent;
+		border-left-color: $greyF;
+		content: '';
+		display: inline-block;
+		border-width: 8px 0 8px 8px;
+	}
+}

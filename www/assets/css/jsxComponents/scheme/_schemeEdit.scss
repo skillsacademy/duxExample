@@ -1,0 +1,13 @@
+@import "../../globalPartials/_vars";
+
+.schemeEdit{
+	.schemeShareWrap,
+	.btnSchemeDelete{
+		display:inline-block;
+	}
+	.btnSchemeShare span,
+	.btnSchemeDelete span{
+		text-transform:capitalize !important;
+		text-decoration:underline !important;
+	}
+}

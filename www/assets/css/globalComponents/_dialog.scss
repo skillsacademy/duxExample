@@ -1,0 +1,24 @@
+/* - fix override material ui component - dialog
+	because it removes scroll, and can crop the content of a dialog if the content exceeds past the vertical screen height 
+*/
+
+/*body[data-state='dialogBleedsWinHeight']{*/
+
+body{
+	overflow:visible !important;
+
+	.dialogWrapper{
+		position:absolute !important;
+		height: auto !important;
+
+		.dialog{
+			max-height: none !important;
+		}
+	}
+}
+
+.dialog{
+	max-height: none !important;
+	padding:20px !important;
+}
+

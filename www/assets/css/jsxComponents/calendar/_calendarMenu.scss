@@ -1,0 +1,56 @@
+@import "../../globalPartials/vars";
+
+.calendarMenu{
+	position:relative;
+	z-index:10; /* above .calendarMonth */
+	padding:$m20;
+
+	.calendarSettings,
+	.timeLabelMonth{
+		vertical-align:middle;
+		display:inline-block;
+	}
+
+	.calendarSettings,
+	ul.buttons li{
+		margin-right:$m20;
+	}
+
+	ul.buttons{
+		margin:0;
+		padding:0;
+
+		li{
+			list-style-type:none;
+			display:inline-block;
+		}
+	}
+
+	.calendarSettings,
+	.calendarWeekView,
+	.calendarSingleMonthView,
+	.calendarMultipleMonthsView{			
+		border:none;
+		background-color:transparent;
+	}
+	.calendarSettings{			
+		background-image:$calendarSettings;
+		width:18px;
+		height:18px;
+	}
+	.calendarWeekView{			
+		background-image:$calendarWeekView;
+		width:18px;
+		height:18px;
+	}
+	.calendarSingleMonthView{			
+		background-image:$calendarSingleMonthView;
+		width:18px;
+		height:18px;
+	}
+	.calendarMultipleMonthsView{			
+		background-image:$calendarMultipleMonthsView;
+		width:18px;
+		height:18px;
+	}		
+}

@@ -1,0 +1,26 @@
+@import "../../globalPartials/_vars";
+
+.topicUnitEdit{
+
+	.holidaySetting{
+		background:$greyF;
+	}
+	.holidayLabel{
+		div{
+			color:$greyC;
+			font-weight:bold;
+		}
+	}
+	.subjectAutoComplete{
+		width:100%;
+	}
+	.btnDeleteUnit{
+		background-color:$greyF !important;
+		padding:$m5 0 !important;
+		height:auto !important;
+		width:100% !important;
+		text-align:left !important;
+		border-bottom:1px solid $greyC !important; 		
+	}
+
+}

@@ -1,0 +1,23 @@
+body{
+	font-family:helevetica neue;
+	font-family:Roboto, sans-serif;
+	font-size:62.5%;	
+}
+fieldset,
+legend{
+	border:0;
+	text-indent:0;
+}
+
+p{
+	margin:$m7 0 0 0;
+	padding:0;
+}
+
+/* override material-ui styles */
+button{
+	span{
+		text-transform: capitalize !important;
+		color:$greyC;
+	}
+}

@@ -1,0 +1,71 @@
+@import "../../globalPartials/_vars";
+
+.schemeSharePop{
+	overflow:visible;
+	padding:10px;
+
+	hr{
+		display:none;
+	}
+	.row{
+		position:relative;	
+		margin-left:0 /* only need minus margins if containing cols. */;
+		margin-right:0 /* only need minus margins if containing cols. */;
+	}
+
+	.invitationCode label,
+	.invitationCode input{
+		color:$grey3;
+	}	
+	.invitationCode label{
+		transform:perspective(1px) scale(1) translate3d(0px, -28px, 0px) !important; 
+	}
+	.invitationCodeText{
+		margin-top:$m20;
+	}	
+
+	.copyLinkWrap{
+		height: auto !important;
+		label,
+		input{
+			display:block;
+		}
+		label{
+			position:static !important;
+			transform:none !important;
+			line-height:36px !important; /* match button */		
+			transform-origin:50% 50% 0 !important; /* default */
+		}
+		input{
+			height: auto !important;
+			background:#f9f9f9 !important;
+			padding:$m10 !important;
+			border:1px solid #e2e2e2 !important;
+		}
+	}
+	.copyLinkBtn{
+		position:absolute !important;
+		top:0;
+		right:0;
+		span{
+			color:$greyC !important;
+		}
+		&:hover{
+			span{
+				color:$grey3 !important;
+			}
+		}
+	}	
+
+	.shareStatuses{
+		clear:both;
+		.shareStatusesTitle{
+			font-weight:normal;
+		}
+		.radioItem{
+			border-bottom:1px solid $greyC;
+			padding:$m10 0;
+		}
+	}
+	
+}

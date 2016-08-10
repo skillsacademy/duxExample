@@ -1,0 +1,84 @@
+@import "../../globalPartials/vars";
+
+.calendarMonth{
+
+/*
+	table:first-child{	
+		margin-top:-40px;
+	}*/
+	table{
+		margin:$m20 0 0 0;
+		border-collapse:collapse;
+		width:100%;
+		position:relative;
+		overflow:hidden;
+
+/*     top relative to th height - gradient *
+		&:after{ 
+			content: " ";
+			position:absolute;
+			bottom:0;
+			left:-10px;
+			width:120%;
+			height:110%;
+			box-shadow:$boxShadowInsetBottom;
+			cursor-pointer:none;
+		}
+		*/
+
+		caption{
+			/*margin:0 0 $m35 50px;*/
+			padding: $m20;
+			text-align:left;
+			font-weight:bold;
+			color:$grey6;
+			position:relative;
+
+		
+		}
+	}
+	th,
+	td{
+		padding:$m4 $m10;
+		width:14.28571428571429%;
+	}
+	th,
+	tfoot td{
+		text-align:left;
+		color:$greyC;
+		padding-bottom:$m20;
+	}
+
+	thead th{
+		height:50px;
+	}
+	th:first-child,
+	td:first-child{
+		padding-left:$m20;
+	}
+	th:last-child,
+	td:last-child{
+		padding-right:$m35;
+	}	
+	
+	tbody .splitWeek td{
+		height:100px;
+	}
+	.wk{
+		display: block;
+		font-weight:bold;
+		margin:0 0 $m5 0;
+	}
+	.dates td{
+		vertical-align:bottom;
+		padding-bottom:$m10;
+	}
+	.dates .spot{
+		margin:0 0 $m5 $m5;
+	}
+	.date{
+		display:block;
+	}
+
+
+}

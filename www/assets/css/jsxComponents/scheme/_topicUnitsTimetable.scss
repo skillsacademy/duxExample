@@ -1,0 +1,178 @@
+@import "../../globalPartials/_vars";
+
+.topicUnitsTimetable{
+
+	margin:$m35 0 0 0;
+	
+
+	position:relative;
+
+	table{
+		margin:0;
+		border-collapse:collapse;
+		border:none;
+		width:100%;
+	}
+
+	caption{
+		text-align:left;
+		padding:0 0 $m20 0;
+		color:$greyC;
+	}
+
+	tr{
+		order:10;
+	}	
+	tr:first-child{
+		order:20;
+	}
+
+	th,
+	td{
+		text-align:left;
+		box-sizing:border-box;
+		vertical-align:top;
+		border:none;
+		/*width:72px;*/
+		width:12.5%;
+	}
+	/*
+	[colspan]{
+		width:auto;
+	}*/
+
+	th[colspan="2"],
+	td[colspan="2"]{
+		width:25%;
+	}
+	th[colspan="3"],
+	td[colspan="3"]{
+		width:37.5%;
+	}
+	th[colspan="4"],
+	td[colspan="4"]{
+		width:50%;
+	}	
+	th[colspan="5"],
+	td[colspan="5"]{
+		width:62.5%;
+	}		
+	th[colspan="6"],
+	td[colspan="6"]{
+		width:75%;
+	}	
+	th[colspan="7"],
+	td[colspan="7"]{
+		width:87.5%;
+	}
+	th[colspan="8"],
+	td[colspan="8"]{
+		width:100%;
+	}			
+
+	th{
+		padding:$m20 $m10 $m10 0; /* 5px to allow date to fit on one line.*/
+		vertical-align:bottom;
+	}
+	th[class*=second] .wk, 
+	th[class*=second] .date{
+		display:none !important;
+	}
+
+	td{
+		padding:$m20 $m10 $m20 $m10;
+		height:200px;
+
+		position:relative;
+		&:before{
+			border-left:1px solid #000;
+			content:" ";
+			position:absolute;
+			left:0;
+			top:0;
+			height:100%;
+		}
+
+		&:last-child:after{
+			border-right:1px solid #000;
+			content:" ";
+			position:absolute;
+			right:0;
+			top:0;
+			height:100%;			
+		}
+
+		&[class*=unit],
+		&[class*=unit] + td{
+			&:before{
+				display:none;
+			}			
+		}	
+		&[class*=unit]{
+			&:after{
+				display:none;
+			}
+		}	
+	}
+
+	td[class*=second]{
+		&:before{
+			border-color:$greyC;
+		}
+	}
+
+	.topicUnit{
+		color:$grey6;
+	
+		font-weight:bold;	
+	}
+
+	.wk{
+		color:$greyC;
+		color:#000;
+
+		@extend %typeSmall;
+	}
+	
+	.date{
+		margin-top:0;
+		display:block;
+		color:$greyC;
+		white-space:nowrap;
+
+		@extend %typeSmall;
+	}
+
+	.drag{
+		top:38px;
+		height:198px;
+		-webkit-box-shadow: 0px 0px 24px 1px rgba(0,0,0,0.38);
+		-moz-box-shadow: 0px 0px 24px 1px rgba(0,0,0,0.38);
+		box-shadow: 0px 0px 24px 1px rgba(0,0,0,0.38);			
+
+		color:#fff;
+		font-weight:bold;
+		position:absolute;
+
+		&[data-colspan='1']{width:12.5%;}
+		&[data-colspan='2']{width:25%;}
+		&[data-colspan='3']{width:37.5%;}
+		&[data-colspan='4']{width:50%;}	
+		&[data-colspan='5']{width:62.5%;}
+		&[data-colspan='6']{width:75%;}
+		&[data-colspan='7']{width::87.5%;}
+		&[data-colspan='8']{width:100%;}
+
+		&[data-pos='1']{left:0;}
+		&[data-pos='2']{left:12.5%;}
+		&[data-pos='3']{left:25%;}
+		&[data-pos='4']{left:37.5%;}
+		&[data-pos='5']{left:50%;}				
+		&[data-pos='6']{left:62.5%;}
+		&[data-pos='7']{left:75%;}		
+		&[data-pos='8']{right:0;}		
+
+		cursor:pointer;				
+	}	
+
+}

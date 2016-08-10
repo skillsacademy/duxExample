@@ -1,0 +1,79 @@
+.marg10{
+	margin:10px;
+}
+.marg16{
+	margin:10px;
+}
+
+.pad10{
+	padding:10px;
+}
+
+.pad16{
+	padding:16px;
+}
+.pad20{
+	padding:20px;
+}
+
+
+/* streching an item inside an element which has padding */
+/* 20 */
+.full20{
+	margin:-20px;
+}
+.fullWidth20{
+	margin:0 -20px;
+}
+.fullWidthTop20{
+	margin:-20px -20px 0 -20px;
+}
+.fullWidthBottom20{
+	margin:0 -20px -20px -20px;
+}
+.fullTop20{
+	margin:-20px 0 0 0;
+}
+.fullBottom20{
+	margin:0 0 -20px;
+}
+
+/* 16 */
+.full16{
+	margin:-16px;
+}
+.fullWidth16{
+	margin:0 -16px;
+}
+.fullWidthTop16{
+	margin:-16px -16px 0 -16px;
+}
+.fullWidthBottom16{
+	margin:0 -16px -16px -16px;
+}
+.fullTop16{
+	margin:-16px 0 0 0;
+}
+.fullBottom16{
+	margin:0 0 -16px;
+}
+
+/* 10 */
+.full10{
+	margin:-10px;
+}
+.fullWidth10{
+	margin:0 -10px;
+}
+.fullWidthTop10{
+	margin:-10px -10px 0 -10px;
+}
+.fullWidthBottom10{
+	margin:0 -10px -10px -10px;
+}
+.fullTop10{
+	margin:-10px 0 0 0;
+}
+.fullBottom10{
+	margin:0 0 -10px;
+}

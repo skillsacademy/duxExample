@@ -1,0 +1,72 @@
+@import "../../globalPartials/_vars";
+
+
+
+.dialogModuleAssign{
+
+	.searchAutoComplete{
+
+		label,
+		label + div,
+		input[type=text]{
+			padding-left:20px !important;
+		}
+
+		> div:last-child{
+			bottom:2px !important;
+		}
+		hr{ bottom: 0 !important}		
+	}
+/*
+	.searchAutoComplete{
+		height:auto !important;
+		line-height: normal !important;
+		
+		> div:first-child{
+			bottom:2px !important;
+		}
+		> div:first-child,
+		input[autocomplete]{ 
+			padding:$m20 !important;
+			height: auto !important;
+		}		
+		hr{ bottom: 0 !important}
+	}
+*/
+	.peopleAssigned,
+	.colFlatBtn{
+		padding: $m5 0;
+	}
+
+	
+
+	.peopleAssigned{		
+		p{
+			margin:0 !important;
+			line-height:36px;
+		}
+	}
+
+	.blockAssigned{
+
+		@extend %boxShadowInsetTop;
+		background:$greyF;
+		min-height:400px;
+
+
+		@extend %flex;
+		@extend %flexVertical;
+		@extend %flexNoWrap;
+		@extend %flexBetween;
+
+		align-items:center;	
+		align-content:center;
+		padding:0 115px;
+
+		p{
+			color:$greyC;
+			line-height:36px;
+			text-align:center;	
+		}
+	}
+}
