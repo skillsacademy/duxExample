@@ -1,10 +1,15 @@
 import React, {PropTypes} from 'react';
 
-const CalendarPresenter = ({name, schemeUrl}) => {
+const CalendarPresenter = ({isOn, onClickToggle}) => {
+
+  const onClick = (event, isOn) => {  
+    onClickToggle(!isOn);
+  }
+
 	return (
       <div className="calendarPresenter">
-      	Bar is visible = {this.props.isOn}
-      	<button onClick={onClickToggle(!this.props.isOn)}>
+      	<p data-state-on={isOn}>Calendar is visible "{isOn? "true":"false"}"</p>
+      	<button onClick={(event) => onClick(event, isOn)}>
       		Click me
       	</button>
       </div>
@@ -12,8 +17,8 @@ const CalendarPresenter = ({name, schemeUrl}) => {
 };
 
 CalendarPresenter.propTypes = {
-  onClickToggle: React.PropTypes.func.isRequired,
-  isOn: React.PropTypes.bool.isRequired
+  isOn: React.PropTypes.bool.isRequired,
+  onClickToggle: React.PropTypes.func.isRequired
 }
 
 export default CalendarPresenter;

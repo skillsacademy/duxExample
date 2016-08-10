@@ -15,7 +15,7 @@ export default class CalendarContainer extends Component {
 
 const mapStateToProps = (state) => {
   return {
-    isOn: state.calendar.isOn
+    isOn: state.calendar.isOn || false
   }
 }
 

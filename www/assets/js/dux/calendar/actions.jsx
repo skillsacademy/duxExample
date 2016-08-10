@@ -1,6 +1,6 @@
 export function onClickToggle(isTrue) {
   return {
-    type: 'SWITCH',
+    type: 'TOGGLE',
     isTrue
   }
 }

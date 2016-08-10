@@ -1,6 +1,6 @@
 export default function calendar(state = {}, action){
 	switch(action.type) {
-		case 'SWITCH':             
+		case 'TOGGLE':             
 			return Object.assign({}, state, {
 			isOn: action.isTrue
 		});  		          
